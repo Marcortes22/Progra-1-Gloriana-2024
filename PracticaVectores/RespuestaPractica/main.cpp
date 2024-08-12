@@ -4,7 +4,9 @@ using namespace std;
 
 	int numeros[5] = {1,2,3,4,5};
 	
-	void ejericio1();
+	
+	
+	int ejericio1();
 
 
 int main () {
@@ -55,7 +57,7 @@ int main () {
 }
 
 
-	void ejericio1(){
+	int ejericio1(){
 		
 		int sumatoria = 0;
 		
