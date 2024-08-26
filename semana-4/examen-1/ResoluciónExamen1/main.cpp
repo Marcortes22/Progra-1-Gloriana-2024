@@ -3,8 +3,11 @@
 #include <iostream>
 using namespace std;
 
+#include"ListaPacientes.h"
+
 int main()
 {
+	ListaPacientes lista;
 	int opcion;
 	
 	do {
@@ -16,7 +19,8 @@ int main()
 		cout << "3. Buscar un paciente\n";
 		cout << "4. Mostrar el promedio de edad de los pacientes\n";
 		cout << "5. Ver el estado de internacion de los pacientes\n";
-		cout << "6. Salir del programa\n";
+		cout << "6. Ver lista pacientes\n";
+		cout << "7. Salir del programa\n";
 		cout << "========================================\n" << endl;
 		cout << "Seleccione una opcion: ";
 		cin >> opcion;
@@ -27,6 +31,7 @@ int main()
 		switch (opcion) {
 		case 1: {
 			cout << "Opcion 1: Ingresar un nuevo paciente\n";
+			
 			// Llamar a la función para ingresar un nuevo paciente
 			system("pause"); // Pausar la ejecución para que el usuario pueda leer el mensaje
 			system("cls"); // Limpiar la pantalla
@@ -61,6 +66,12 @@ int main()
 			break;
 		}
 		case 6: {
+			lista.getListPacientes();
+			system("pause"); // Pausar la ejecución para que el usuario pueda leer el mensaje
+			system("cls"); // Limpiar la pantalla
+			break;
+		}
+		case 7: {
 			cout << "Saliendo del programa...\n";
 			system("pause"); // Pausar la ejecución para que el usuario pueda leer el mensaje
 			system("cls"); // Limpiar la pantalla
@@ -72,5 +83,5 @@ int main()
 			system("cls"); // Limpiar la pantalla
 		}
 		}
-	} while (opcion != 6);
+	} while (opcion != 7);
 }
