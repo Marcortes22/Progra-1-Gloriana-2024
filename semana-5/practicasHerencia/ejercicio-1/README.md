@@ -2,7 +2,7 @@
 
 ### Descripción
 
-Crea una clase base llamada `Animal` que tenga un atributo `nombre` y un método `hacerSonido()`. Luego, crea una clase derivada llamada `Perro` que herede de `Animal`. En la clase `Perro`
+Crea una clase base llamada `Animal` que tenga un atributo `nombre` y un método `hacerSonido()`. Luego, crea una clase derivada llamada `Perro` que herede de `Animal`.
 
 ### Instrucciones
 
