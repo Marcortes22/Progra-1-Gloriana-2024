@@ -7,7 +7,7 @@ public:
 	
 	// Método virtual para permitir polimorfismo
 	virtual void hacerSonido(){
-		cout << "El animal hace un sonido." << std::endl;
+		cout << "El animal hace un sonido." << endl;
 	}
 	
 };
@@ -17,7 +17,7 @@ class Perro : public Animal {
 public:
 	// Sobrescribe el método hacerSonido() para Perro
 	void hacerSonido() override {
-		cout << "El perro ladra." << std::endl;
+		cout << "El perro ladra." << endl;
 	}
 };
 
@@ -26,7 +26,7 @@ class Gato : public Animal {
 public:
 	// Sobrescribe el método hacerSonido() para Gato
 	void hacerSonido() override {
-		cout << "El gato maulla." << std::endl;
+		cout << "El gato maulla." << endl;
 	}
 };
 
