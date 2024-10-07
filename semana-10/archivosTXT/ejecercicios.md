@@ -29,12 +29,12 @@
 - El programa debe permitir:
   - Agregar productos.
   - Mostrar productos.
-  - Actualizar la cantidad de un producto (reescribiendo el archivo entero).
+  - Generar una copia del archivo de inventario.
 
 **Operaciones**:
 
 - Leer el archivo de forma secuencial para mostrar los productos.
-- Al actualizar la cantidad de un producto, se debe leer todo el archivo, modificar los datos correspondientes y sobrescribir el archivo completo (usando `ios::trunc`).
+- Al generar una copia del archivo, se debe crear un archivo temporal y copiar todos los datos del archivo original a este nuevo archivo.
 
 ---
 
@@ -48,46 +48,12 @@
 - El programa debe:
   - Registrar nuevas notas.
   - Mostrar las notas de todos los estudiantes.
-  - Calcular el promedio de las calificaciones y mostrar a los estudiantes que están aprobados (nota >= 70).
+  - Mostrar solo una nota en la linea que el usuario quiera(validar que la linea existe).
 
 **Operaciones**:
 
 - Uso de `fstream` para lectura y escritura.
-- Lectura secuencial para mostrar y calcular promedios.
+- Lectura secuencial para mostrar.
+- Lectura unica para mostrar un elemento.
 
 ---
-
-## 4. Registro de Tareas
-
-**Objetivo**: Implementar un programa para gestionar una lista de tareas.
-
-**Descripción**:
-
-- El archivo `tareas.txt` almacenará las tareas pendientes y completadas.
-- Cada tarea tendrá un título, descripción y estado (pendiente o completada).
-- El programa debe permitir agregar nuevas tareas y marcar las tareas como completadas, modificando el archivo.
-
-**Operaciones**:
-
-- Abrir el archivo en modo lectura y mostrar las tareas.
-- Modificar el estado de una tarea y sobrescribir el archivo.
-- Eliminar tareas completadas y reescribir el archivo.
-
----
-
-## 5. Acceso Aleatorio: Registro de Libros
-
-**Objetivo**: Implementar un sistema de biblioteca que permita el acceso aleatorio para modificar registros específicos de libros.
-
-**Descripción**:
-
-- Cada libro tendrá un ID, título y autor.
-- El archivo `libros.txt` almacenará la información de los libros.
-- El programa debe permitir:
-  - Agregar nuevos libros.
-  - Buscar un libro por ID y modificar su información usando `seekg` y `seekp`.
-
-**Operaciones**:
-
-- Acceso aleatorio usando `seekg` para encontrar un libro específico.
-- Actualización de los detalles del libro en el archivo usando `seekp`.
