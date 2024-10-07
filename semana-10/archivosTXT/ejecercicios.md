@@ -6,7 +6,7 @@
 
 **Descripción**:
 
-- El programa debe permitir agregar, mostrar y buscar contactos.
+- El programa debe permitir agregar y mostrar contactos.
 - Cada contacto tendrá un nombre, un número de teléfono y un email.
 - Los contactos se deben almacenar en un archivo de texto llamado `contactos.txt`.
 - El programa debe abrir el archivo en modo secuencial para leer todos los contactos al inicio y escribir al final los nuevos contactos.
